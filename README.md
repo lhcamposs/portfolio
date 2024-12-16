@@ -1,29 +1,9 @@
-Claro! Aqui está um exemplo de README para a sua página de portfólio:
-
-```markdown
 # Portfólio de Desenvolvimento Web
 
 Bem-vindo ao meu portfólio de desenvolvimento web. Este repositório contém os arquivos para a minha página de portfólio, onde você pode encontrar uma lista dos projetos que desenvolvi.
 
 ## Estrutura do Projeto
 
-```
-📦portfolio
- ┣ 📂img
- ┃ ┣ 📂projetos
- ┃ ┃ ┣ 📜calculadora1.png
- ┃ ┃ ┣ 📜evento1.png
- ┃ ┃ ┣ 📜jogo1.png
- ┃ ┃ ┣ 📜loja1.png
- ┃ ┃ ┗ 📜pessoal1.png
- ┣ 📂src
- ┃ ┣ 📂javascript
- ┃ ┃ ┗ 📜index.js
- ┃ ┣ 📂style
- ┃ ┃ ┗ 📜style.css
- ┣ 📜index.html
- ┗ 📜README.md
-```
 
 ## Tecnologias Utilizadas
 
