@@ -1,82 +1,182 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* style.css */
 
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f9;
-  color: #333;
-  padding: 20px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 20px;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: #333;
-}
-
-.portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.portfolio-item {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.portfolio-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.portfolio-item .content {
+  background-color: #333;
+  color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-.portfolio-item h3 {
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.projetos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projeto {
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.projeto h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #333;
 }
 
-.portfolio-item a {
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
+.projeto p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.projeto .btn {
+  background-color: rgb(197, 16, 10);
   color: #fff;
-  background: #007bff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  transition: background 0.3s ease;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-.portfolio-item a:hover {
-  background: #0056b3;
+.projeto .btn:hover {
+  background-color: #bd2c07;
+}
+
+.projeto img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: solid;
+  border-radius: 10px;
+  border-color: #130605;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .projeto {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .projeto {
+    flex: 1 1 100%;
+  }
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .projeto {
+    width: 100%;
+  }
+
+  header .menu {
+    flex-direction: column;
+    align-items: center;
+    display: none; /* O menu estará escondido inicialmente */
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px 0;
+  }
+
+  /* Exibindo o menu hambúrguer */
+  header .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .hamburger .line {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+  }
+
+  /* Exibindo o menu ao clicar no hambúrguer */
+  header .menu.active {
+    display: block;
+  }
+
+  /* Ajuste no item do menu */
+  header .menu li {
+    margin: 10px 0;
+  }
+
+  /* Ajustando a largura e layout da seção intro */
+  .intro {
+    flex-direction: column; /* Coloca a imagem e o texto em uma coluna */
+    gap: 10px;
+    padding: 20px;
+  }
+
+  /* Ajustando o tamanho da imagem na versão móvel */
+  .intro-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .intro-text h2 {
+    font-size: 1.2em;
+  }
+
+  .intro-text h3.highlight {
+    font-size: 1.5em;
+  }
 }

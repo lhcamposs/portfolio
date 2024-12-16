@@ -7,15 +7,109 @@
     <link rel="stylesheet" href="./src/style/style.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Meu portfolio</h1>
-        <p>Se liga nos meus projetos de front-end!</p>
-      </header>
+    <header>
+      <nav>
+        <a href="#top">Início</a>
+        <a href="#projetos">Projetos</a>
+      </nav>
+      <h1>Portfólio de Desenvolvimento Front-end</h1>
+    </header>
 
-      <div class="portfolio" id="portfolio"></div>
+    <div class="container" id="top">
+      <section>
+        <h2>Sobre</h2>
+        <p>
+          Bem-vindo ao meu portfólio! Aqui você encontrará uma lista de projetos
+          desenvolvidos na disciplina de Desenvolvimento Web. Cada projeto
+          contém detalhes sobre as tecnologias utilizadas e os requisitos que
+          serão implementados futuramente.
+        </p>
+      </section>
+
+      <section id="todos" class="card todos">
+        <h2>Todos os Projetos</h2>
+        <div class="projetos-lista">
+          <div class="projeto">
+            <h3>Página Pessoal</h3>
+            <p>
+              Uma página pessoal que apresenta informações detalhadas sobre
+              minha trajetória profissional e acadêmica, destacando minhas
+              experiências, formações e projetos.
+            </p>
+            <img
+              src="./src/img/pagina-pessoal.png"
+              alt="Imagem do projeto Página Pessoal"
+            />
+            <a
+              href="https://lhcamposs.github.io/Pagina-Pessoal/"
+              target="_blank"
+              class="btn"
+              >Ver Projeto</a
+            >
+          </div>
+          <div class="projeto">
+            <h3>Página de Eventos</h3>
+            <p>Uma Landing page para um workshop de programação</p>
+            <img
+              src="./src/img/pagina-evento.png"
+              alt="Imagem do projeto Página de Eventos"
+            />
+            <a
+              href="https://lhcamposs.github.io/Pagina-workshop-programacao/"
+              target="_blank"
+              class="btn"
+              >Ver Projeto</a
+            >
+          </div>
+          <div class="projeto">
+            <h3>Loja Virtual</h3>
+            <p></p>
+            <img src="" alt="Imagem do projeto Loja Virtual" />
+            <a href="" target="_blank" class="btn">Ver Projeto</a>
+          </div>
+          <div class="projeto">
+            <h3>Calculadora</h3>
+            <p>
+              Uma calculadora web funcional feita com JavaScript, HTML e CSS.
+            </p>
+            <img
+              src="./src/img/calculadora.png"
+              alt="Imagem do projeto Calculadora"
+            />
+            <a
+              href="https://lhcamposs.github.io/calculadora/"
+              target="_blank"
+              class="btn"
+              >Ver Projeto</a
+            >
+          </div>
+          <div class="projeto">
+            <h3>Jogo da memoria Genius</h3>
+            <p>
+              Genius Game é uma recriação do clássico jogo de memória onde o
+              jogador deve repetir uma sequência de cores que aumenta de forma
+              progressiva a cada rodada. O objetivo é desafiar sua memória e
+              reflexos, alcançando a maior pontuação possível.
+            </p>
+            <img
+              src="./src/img/jogo-da-memoria-GENIUS.png"
+              alt="Imagem do projeto Jogo de memoria Genius"
+            />
+            <a
+              href="https://lhcamposs.github.io/Jogo-de-Memoria-Genius/"
+              target="_blank"
+              class="btn"
+              >Ver Projeto</a
+            >
+          </div>
+        </div>
+      </section>
     </div>
-
+    <footer>
+      <p>
+        &copy; 2024 Luan Henrique Campos Soares - Todos os direitos reservados.
+      </p>
+    </footer>
     <script src="./src/javascript/index.js"></script>
   </body>
 </html>
